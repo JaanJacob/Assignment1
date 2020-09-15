@@ -10,6 +10,10 @@ export class AccountComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(JSON.parse (localStorage.getItem("loggedInUser")));
   }
+
+
+  
 
 }
