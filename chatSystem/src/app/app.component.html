@@ -1,2 +1,17 @@
-<h1>app Page works</h1><br><br>
-<a routerLink="/account" routerLinkActive="active">Account</a>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+  <ul class="nav navbar-nav">
+  <li class="active"><a class="nav-link" routerLink="/">Home</a></li>
+  <li> <a class="nav-link" routerLink='/login'>login</a></li>
+  <li><a class="nav-link" routerLink='/account'>Account</a></li>
+  <li><a class="nav-link" routerLink='/chat'>Chat</a></li>
+  </ul>
+  </div>
+ </nav>
+ <div class="container">
+ <router-outlet></router-outlet>
+ </div>
