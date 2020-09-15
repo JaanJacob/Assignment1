@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from './services/login.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'chatSystem';
+
+  constructor(private loginService: LoginService) {
+  }
+
+  logout(){
+    this.loginService.isLoggedIn = false;
+    localStorage.removeItem("loggedInUser");
+    console.log("logged Out")
+  }
+
 }
