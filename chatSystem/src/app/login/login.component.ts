@@ -17,9 +17,15 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute, private loginService: LoginService) { 
     this.users=[
-      {"name": "aa", "email": "aa@gmail.com", "id": 1, "role": "user" },
-      {"name": "bb", "email": "bb@gmail.com", "id": 1, "role": "user" },
-      {"name": "cc", "email": "cc@gmail.com", "id": 1, "role": "user" }
+      {"name": "super", "email": "super@gmail.com", "id": 1, "role": "superAdmin" },
+      {"name": "groupAD", "email": "groupAD@gmail.com", "id": 2, "role": "groupAdmin" },
+      {"name": "groupAS", "email": "groupAD@gmail.com", "id": 3, "role": "groupAssis" },
+
+      {"name": "aa", "email": "aa@gmail.com", "id": 4, "role": "user" },
+      {"name": "bb", "email": "bb@gmail.com", "id": 5, "role": "user" },
+      {"name": "cc", "email": "cc@gmail.com", "id": 6, "role": "user" },
+      {"name": "dd", "email": "dd@gmail.com", "id": 7, "role": "user" },
+      {"name": "ee", "email": "ee@gmail.com", "id": 8, "role": "user" }  
     ];
   }
 
