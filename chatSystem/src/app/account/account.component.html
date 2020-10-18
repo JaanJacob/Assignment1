@@ -26,8 +26,10 @@
                         <!-- Login Form -->
                         <form>
                           <input type="text" [(ngModel)]="formGroupName" id="login"  name="fornGroupName" placeholder="Group Name">
-                          <input type="text" [(ngModel)]="formRoomName" id="login"  name="formRoomName" placeholder="Add room">
+                          <input type="text" [(ngModel)]="formRoomName" id="login"  name="formRoomName" placeholder="Room Name">
                           <button (click)="addGroup()"> AddGroup </button>
+                          &nbsp;
+                          <button (click)="deleteGroup()"> Delete Group </button><br><br>
                         </form>
                     
                     

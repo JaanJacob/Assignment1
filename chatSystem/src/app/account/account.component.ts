@@ -129,4 +129,13 @@ export class AccountComponent implements OnInit {
     }
   }
 
+  deleteGroup(){
+    for (let i in this.groups){
+      if (this.groups[i].groupName == this.formGroupName){
+        this.groups.splice(i, 1);
+        console.log("deleted", this.groups[i]);
+      }
+    }
+  }
+
 }

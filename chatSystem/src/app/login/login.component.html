@@ -37,7 +37,9 @@
     <form>
       <input type="text" [(ngModel)]="newUserName" id="login"  name="newUserName" placeholder="Enter Name">
       <input type="text" [(ngModel)]="newUserEmail" id="login"  name="newUserEmail" placeholder="Enter Email">
-      <button (click)="createUser()"> Create User </button><br><br>
+      <button (click)="createUser()"> Create User </button>
+      &nbsp;
+      <button (click)="deleteUser()"> Delete User </button><br><br>
     </form>
   </div>
 </div>

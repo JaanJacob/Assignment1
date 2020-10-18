@@ -21,6 +21,8 @@ export class LoginComponent implements OnInit {
   newUserEmail= "";
   newUserArray= {'name':'', 'email':'', 'role':'user'};
 
+  index = -1;
+
   constructor(private router: Router, private route: ActivatedRoute, private loginService: LoginService) { 
     this.users=[
       {"name": "super", "email": "super@gmail.com", "id": 1, "role": "superAdmin" },
@@ -62,5 +64,12 @@ export class LoginComponent implements OnInit {
     console.log(this.newUserArray);
   }
 
-
+  deleteUser(){
+    for (let i in this.users){
+      if (this.users[i].name == this.newUserName){
+        this.users.splice(i, 1);
+        console.log("deleted", this.users[i]);
+      }
+    }
+  }
 }
