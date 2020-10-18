@@ -10,6 +10,10 @@ export class AccountComponent implements OnInit {
   groups: any;
   userGroups: any;
 
+  formGroupName: '';
+  formRoomName: '';
+  newGroupArray= [{groupName:'', members:[{'name':''}], rooms:[{'name':''}]}];
+
   constructor() {
 
     this.groups = [
@@ -106,8 +110,6 @@ export class AccountComponent implements OnInit {
       }
     }
 
-    
-
     console.log("printing");
     console.log(this.user.name);
     console.log(this.groups[0].members);
@@ -116,6 +118,15 @@ export class AccountComponent implements OnInit {
   }
 
 
-  
+  addGroup(){
+    if (this.formGroupName == '' || this.formRoomName == '') {
+      alert("no data entered");
+    }else {
+      this.newGroupArray[0].groupName = this.formGroupName;
+      this.groups.push(this.newGroupArray[0]);
+      console.log(this.groups);
+      
+    }
+  }
 
 }
