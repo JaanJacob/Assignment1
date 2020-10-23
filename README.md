@@ -4,6 +4,22 @@ Assignment 1 of software frameworks course - chat system.
 ## __GitHub:__ 
 The version history of this project can be found here: https://github.com/JaanJacob/Assignment1.git 
 
+## __Users:__
+User names are defined as ‘aa’, ‘bb’ etc for convenience.
+All the users have the same password ‘123’.
+
+name | email | id | role
+-----|-------|----|-----
+super |	super@gmail.com |	1 |	superAdmin
+groupAD |	groupAD | @gmail.com |	2 |	groupAdmin
+groupAS |	groupAS | @gmail.com |	3 |	groupAssis
+aa |	aa@gmail.com |	4 |	user
+bb |	bb@gmail.com |	5 |	user
+cc |	cc@gmail.com |	6 |	user
+dd |	dd@gmail.com |	7 |	user
+ee |	ee@gmail.com |	8 |	user
+
+
 ## __Angular architecture:__
 There are three components; login component where a user can log in using a name and password and then these credentials are checked against an array of users. 
 Account component where the logged in user information are displayed. It displays the logged in user name acquired from the local storage as the user logs in. Then it shows the groups that the particular user is part of and all the rooms available for that group.
