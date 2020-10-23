@@ -11,8 +11,8 @@ All the users have the same password ‘123’.
 name | email | id | role
 -----|-------|----|-----
 super |	super@gmail.com |	1 |	superAdmin
-groupAD |	groupAD | @gmail.com |	2 |	groupAdmin
-groupAS |	groupAS | @gmail.com |	3 |	groupAssis
+groupAD |	groupAD@gmail.com |	2 |	groupAdmin
+groupAS |	groupAS@gmail.com |	3 |	groupAssis
 aa |	aa@gmail.com |	4 |	user
 bb |	bb@gmail.com |	5 |	user
 cc |	cc@gmail.com |	6 |	user
